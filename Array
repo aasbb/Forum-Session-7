@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+    char kode[2][10] = {"COMP123", "COMP098"};        // deklarasi dan inisialisasi variabel menggunakan tipe data array 2 dimensi
+    char matkul[2][15] = {"Pemrograman", "Database"}; // deklarasi dan inisialisasi variabel menggunakan tipe data array 2 dimensi
+    int sks[2] = {'4', '6'};                          // deklarasi dan inisialisasi variabel menggunakan tipe data array
+    char grade[2] = {'B', 'A'};                       // deklarasi dan inisialisasi variabel menggunakan tipe data array
+    int i;
+    printf("======================================================\n");
+    printf("==============\033[1;32mPROGRAM JENIS MATA KULIAH\033[0m===============\n"); // saya memberikan warna hijau
+    printf("======================================================\n\n");
+
+    printf("kode\t:\t");
+    for (i = 0; i < 2; i++)
+    {
+        printf("%s\t\t\t", kode[i]);
+    } // perulangan untuk menampilkan element dari indeks array 0 hingga 1 milik kode
+
+    printf("\n");
+    printf("matkul\t:\t");
+    for (i = 0; i < 2; i++)
+    {
+        printf("%s\t\t", matkul[i]);
+    } // perulangan untuk menampilkan element dari indeks array 0 hingga 1 milik matkul
+
+    printf("\n");
+    printf("sks\t:\t");
+    for (i = 0; i < 2; i++)
+    {
+        printf("%c\t\t\t", sks[i]);
+    } // perulangan untuk menampilkan element dari indeks array 0 hingga 1 milik sks
+
+    printf("\n");
+    printf("grade\t:\t");
+    for (i = 0; i < 2; i++)
+    {
+        printf("%c\t\t\t", grade[i]);
+    } // perulangan untuk menampilkan element dari indeks array 0 hingga 1 milik grade
+
+    printf("\n\n");
+
+    printf("======================================================\n");
+    printf("======\033[1;32mTERIMA KASIH TELAH MENGGUNAKAN PROGRAM KAMI\033[0m=====\n"); // saya memberi warna hijau
+    printf("======================================================\n\n");
+
+    return 0;
+}
